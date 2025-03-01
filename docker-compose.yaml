@@ -13,4 +13,4 @@ services:
       dockerfile: DockerFile
     volumes:
       - .:/app
-    command: ["./DockerTests"]
+    command: ["./DeploymentTests"]

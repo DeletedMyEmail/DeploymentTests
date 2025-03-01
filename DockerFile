@@ -10,4 +10,4 @@ COPY . .
 RUN cmake .
 RUN cmake --build .
 
-ENTRYPOINT ["./DockerTests"]
+ENTRYPOINT ["./DeploymentTests"]
