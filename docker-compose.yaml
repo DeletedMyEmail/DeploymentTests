@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  cmake-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: ["cmake", "--build", "."]
+  cmake-run:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: ["./DockerTests"]
